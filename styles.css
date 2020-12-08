@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+
+/********** Resets **********/
+* {
+	box-sizing: border-box;
+}
+h1, h2, p, ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+nav ul, nav ol { 
+	list-style-type: none; 
+}
+a { 
+	text-decoration:none;
+}
+img {
+    max-width: 100%;
+ 
+}
+/**** Header Styles ******/
+
+body {
+	background-image:url("Images/groundTiles1000.png")
+}
+
+header h1 {
+	font-family: 'Alex Brush','Arizonia','Allura', cursive;
+	font-size: 65px;
+}
+
+/***** Navigation Styles *******/
+
+#navigation {
+	position: relative;
+}
+
+#mobilenav {
+	background: #0F75BC;
+	margin-bottom: 20px;
+	padding-right: 20px;
+}
+
+#mobilenav h2 {
+	text-align: right;
+	line-height: 50px;
+	color: #454444;
+	font-size: 36px;
+}
+
+#mainnav {
+	width: 200px;
+	position: absolute; 
+	top: 50px;
+	right: 0;
+	border-top: 1px solid #454444;
+}
+
+#mainnav ul {
+	background: #0F75BC;
+}
+
+#mainnav ul li a {
+	display:block;
+	background:#454444;
+	color:#ebebeb;
+	font-weight:400px;
+	font-size:20px;
+	line-height:40px;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:right;
+	padding-right: 20px;
+	width:150px;
+	border-bottom: 1px solid #014b73;
+}
+
+#mainnav ul li a:hover {
+	background:#379CE3;
+}
+
+/******* Home section styles *******/
+
+#homeinfo { padding: 0; }
+
+#homeinfo { display: flex; }
+
+#homeinfo article { padding: 15px; }
+
+#homeinfo img {align:right}
+
+#homeinfo article:first-of-type { background:#0F75BC; }
+
+#homeinfo article:last-of-type { background:#f1f1f1; }
+
+/****** Services styles*******/
+
+#servicesParent {
+	background-color: #0F75BC;
+	padding: 20px;
+}
+
+#servicesParent .servicesIconsParent {
+	background-color: gainsboro;
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+
+/******FAQ styles******/
+
+.faqParent dl dt {
+	font-weight: 200;
+}
+
+/******Reviews Styles *******/
+
+/***** Photos Styles ******/
+
+/***** Footer Styles *******/
+
+#footer {
+	display:flex;
+	justify-content: space-between;
+}
+
+.name h2 {
+	font-family: 'Alex Brush','Arizonia','Allura', cursive;
+}
+
+
+/***** Responsive *******/
+
+.name {
+}
