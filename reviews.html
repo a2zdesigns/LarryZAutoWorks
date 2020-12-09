@@ -3,16 +3,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Larry'Z AutoWorks</title><link rel="icon" type="image/x-con" href="assets/Graphics/FaviconLZ6.png"/> <meta name="description" content="Larry'Z AutoWorks is a foreign and domestic auto repair shop located in Sacramento, CA. They specialize in Volkswagens. Contact us for an appointment 916-447-2604">
 	
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Arizonia&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" type="text/css">
-
+<title>Larry'Z AutoWorks</title><link rel="icon" type="image/x-con" href="Graphics/FaviconLZ6.png"> <meta name="description" content="Larry'Z AutoWorks is a foreign and domestic auto repair shop located in Sacramento, CA. They specialize in Volkswagens. Contact us for an appointment 916-447-2604">
+	
+<!-- Load Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+<!-- Link to my Style sheet-->
+	
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Arizonia&display=swap" rel="stylesheet">
+	
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	
+<!-- Needed for mobile devices to not zoom out automatically-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 </head>
-
 <body>
 <div id="container"> 
-	<class id="top">
+	
   
 <header>
 			<div>
@@ -46,27 +55,25 @@
 	  
 	  <h1>Reviews</h1>
 
-			<p>We've been in business for over 40 years and our reviews speak for themselves!</p>
+			<h3>We've been in business for over 40 years and our reviews speak for themselves!</h3>
+	  
      <div id="reviews">
-	 <article>
-		 <p>
-	  I just brought my car here for the first time, and I'm very impressed!! I had to part ways with my old mechanic of 10 years and I think I've found just what I needed, a trustworthy mechanic. I can say that with confidence because this might be the first time I had my BMW serviced for under $1000 and it's driving like a dream. I'm so grateful!
--Von B.
-	  </p>
-	  </article>
+		 <class id="personalReview">
+	 		<article>
+				 <p>I just brought my car here for the first time, and I'm very impressed!! I had to part ways with my old mechanic of 10 years and I think I've found just what I needed, a trustworthy mechanic. I can say that with confidence because this might be the first time I had my BMW serviced for under $1000 and it's driving like a dream. I'm so grateful! <br><strong>-Von B.</strong></p>
+	  	</article>
 		 
-	<article>	 
-	  <p>
-	  I've been bringing my car here for easily 10 years (they do such great work it's still running!). Always great work and honest. Aaron always makes sure you understand the inner workings of your car and the needed repairs. Never any pressure. Mechanics you can absolutely trust.
--Veronica S.
-	  </p>
-	</article>	  
-	
+		<article>	 
+			  <p>
+			  I've been bringing my car here for easily 10 years (they do such great work it's still running!). Always great work and honest. Aaron always makes sure you understand the inner workings of your car and the needed repairs. Never any pressure. Mechanics you can absolutely trust.<br><strong>-Veronica S.</strong></p>
+			  
+		</article>	  
+	</class>
 	  </div> 
 	  
 	  <h2>Find Us on Social Media</h2>
 	  
-	 <div id="social links">
+	 <div id="socialLinks">
 	  <img src="Graphics/yelp-brands.svg" width="25" alt="yelp logo">
 	  <img src="Graphics/google-brands.svg" width="25" alt="google logo">
 	  <img src="Graphics/facebook-f-brands.svg" width="25" alt="facebook logo">
@@ -94,5 +101,60 @@
   </footer>	
 
 </div>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$('.flip-container').bind("touchstart mouseenter", function(e) {
+
+			e.stopPropagation();
+			e.preventDefault();
+
+			if( e.type == "mouseenter" ){
+				$(this).addClass("hover");
+
+				$(this).on("mouseleave", function(e) {
+					$(this).removeClass("hover");
+				});
+			}
+
+			else{
+				if( $(this).hasClass("hover") ){
+					$(this).removeClass("hover");
+				}
+				else{
+					$(this).addClass("hover");
+				}
+				$('.flip-container').not(this).removeClass("hover");
+			}
+
+		});
+
+		
+		$('#mobilenav h2').click(function(){
+              $('#mainnav').slideToggle('slow');
+          });
+
+          function showHideMenu(){
+
+              var viewportWidth = $(window).width();
+
+              if(viewportWidth > 600){
+                  $('#mainnav').show();	
+              } else{
+                  $('#mainnav').hide();
+              }
+          }
+
+  		showHideMenu();
+		
+		$( window ).resize(function() {
+			showHideMenu();
+		});
+
+	</script>
+	
+	
 </body>
 </html>

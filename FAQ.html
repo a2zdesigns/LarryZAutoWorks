@@ -3,16 +3,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Larry'Z AutoWorks</title><link rel="icon" type="image/x-con" href="assets/Graphics/FaviconLZ6.png"/> <meta name="description" content="Larry'Z AutoWorks is a foreign and domestic auto repair shop located in Sacramento, CA. They specialize in Volkswagens. Contact us for an appointment 916-447-2604">
 	
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Arizonia&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" type="text/css">
-
+<title>Larry'Z AutoWorks</title><link rel="icon" type="image/x-con" href="Graphics/FaviconLZ6.png"> <meta name="description" content="Larry'Z AutoWorks is a foreign and domestic auto repair shop located in Sacramento, CA. They specialize in Volkswagens. Contact us for an appointment 916-447-2604">
+	
+<!-- Load Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+<!-- Link to my Style sheet-->
+	
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Arizonia&display=swap" rel="stylesheet">
+	
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	
+<!-- Needed for mobile devices to not zoom out automatically-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 </head>
 
 <body>
 <div id="container"> 
-	<class id="top">
   
 <header>
 			<div>
@@ -46,32 +55,20 @@
 	  <section id="faqParent">
       <h1>Frequently Asked Questions</h1>
 		<dl>
-			<dt>Do I need to make an appointment?</dt>
+			<dt><strong>Do I need to make an appointment?</strong></dt>
 			<dd>While we do occasionally take walk ins, it is always best to make an appointment.</dd>
-			<dt>Which payments methods do you accept?</dt>
+			<dt><strong>Which payments methods do you accept?</strong></dt>
 			<dd>We accept Visa, Mastercard, American Express, Discover and,  of course, cash!</dd>
-			<dt>Which car models do you repair?</dt>
+			<dt><strong>Which car models do you repair?</strong></dt>
 			<dd>While we specialize in foreign car models, we have the ability to work on most vehicles. It is best to give us a call so we can determine if our shop can assist you.</dd>
-			<dt>Do you preform pre-purchase inspections?</dt>
+			<dt><strong>Do you preform pre-purchase inspections?</strong></dt>
 			<dd>Yes! We are happy to help take a look at vehicles you are considering to purchase.</dd>
-			<dt>Do you warranty your service?</dt>
+			<dt><strong>Do you warranty your service?</strong></dt>
 			<dd>We stand behind our work and our proud to offer a limited warranty of our services.</dd>
 		</dl>
-	 <p><a href="#top">Back to Top</a></p>
     </section>
     
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-  
+	 
 	</main>
 	
   <footer>
@@ -94,5 +91,60 @@
   </footer>	
 
 </div>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$('.flip-container').bind("touchstart mouseenter", function(e) {
+
+			e.stopPropagation();
+			e.preventDefault();
+
+			if( e.type == "mouseenter" ){
+				$(this).addClass("hover");
+
+				$(this).on("mouseleave", function(e) {
+					$(this).removeClass("hover");
+				});
+			}
+
+			else{
+				if( $(this).hasClass("hover") ){
+					$(this).removeClass("hover");
+				}
+				else{
+					$(this).addClass("hover");
+				}
+				$('.flip-container').not(this).removeClass("hover");
+			}
+
+		});
+
+		
+		$('#mobilenav h2').click(function(){
+              $('#mainnav').slideToggle('slow');
+          });
+
+          function showHideMenu(){
+
+              var viewportWidth = $(window).width();
+
+              if(viewportWidth > 600){
+                  $('#mainnav').show();	
+              } else{
+                  $('#mainnav').hide();
+              }
+          }
+
+  		showHideMenu();
+		
+		$( window ).resize(function() {
+			showHideMenu();
+		});
+
+	</script>
+	
+	
 </body>
 </html>
