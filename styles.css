@@ -29,6 +29,7 @@ body {
 header h1 {
 	font-family: 'Alex Brush','Arizonia','Allura', cursive;
 	font-size: 65px;
+
 }
 
 /***** Navigation Styles *******/
@@ -51,7 +52,7 @@ header h1 {
 }
 
 #mainnav {
-	width: 200px;
+	width: 150px;
 	position: absolute; 
 	top: 50px;
 	right: 0;
@@ -64,11 +65,11 @@ header h1 {
 
 #mainnav ul li a {
 	display:block;
-	background:#454444;
+	background:#0f75bc;
 	color:#ebebeb;
 	font-weight:400px;
 	font-size:20px;
-	line-height:40px;
+	line-height:50px;
 	text-decoration:none;
 	text-transform:uppercase;
 	text-align:right;
@@ -83,18 +84,32 @@ header h1 {
 
 /******* Home section styles *******/
 
-#homeinfo { padding: 0; }
-
-#homeinfo { display: flex; }
+#homeinfo { padding: 0;
+	background:#44A1E2
+	}
 
 #homeinfo article { padding: 15px; }
 
-#homeinfo img {align:right}
+#homeinfo img {
+	padding: 20px;
+}
 
-#homeinfo article:first-of-type { background:#0F75BC; }
+#homeinfo article:first-of-type { 
+	font-size:1.1em;
+	color: aliceblue;
+	padding-bottom: 25px;
+ }
 
-#homeinfo article:last-of-type { background:#f1f1f1; }
+#homeinfo article:last-of-type {
+	font-size: 1.2em;
+	color:aliceblue; 
+	padding-top: 20px;
+	padding-left: 30px;
+}
 
+#homeinfo article ul li{
+	list-style-type:disc;
+}
 /****** Services styles*******/
 
 #servicesParent {
@@ -127,6 +142,9 @@ header h1 {
 #footer {
 	display:flex;
 	justify-content: space-between;
+	padding: 35px;
+	background: #0f75bc;
+	color: aliceblue;
 }
 
 .name h2 {
@@ -134,7 +152,56 @@ header h1 {
 }
 
 
+
+
 /***** Responsive *******/
 
-.name {
+@media only screen and (min-width: 600px){ 
+
+
+	h1 {
+		font-size: 2.5rem;
+	}
+	
+	#header img { 
+		display: right;}
+	
+	#mobilenav {
+		display:none;
+	}
+	
+	#mainnav {
+		box-sizing: border-box;
+		position: static;
+		width: 100%;
+		margin-bottom: 20px;
+		border-top: none;
+		border-left: 1px solid #44A1E2;
+	}
+	
+	#mainnav ul {
+		display: flex;
+	}
+	
+	#mainnav ul li {
+		flex:1;
+	}
+	
+	#mainnav ul li a {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
+		text-align: center;
+		border-bottom: none;
+		border-right: 1px solid #44A1E2;
+	}
+}
+
+@media only screen and (min-width: 960px){ 
+
+	body {
+		background-repeat:no-repeat;
+		background-size: cover;
+	}
+
 }
