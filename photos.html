@@ -26,11 +26,11 @@
 <header>
 			<div>
 				<h1>Larry'Z AutoWorks </h1>
-				<h3><em>Foreign & Domestic Auto Repair <br>Specializing in Volkswagens</em></h3>
+				<h3><em>Foreign & Domestic Auto Repair ~ Specializing in Volkswagens</em></h3>
 			</div>
 
-			<div>
-				<img src="Graphics/gti2.png" alt="blue car">
+			<div id="imgHeader">
+				<img src="Graphics/gti2.png" width="425" alt="blue car">
 				<h2>916.447.2604<br>500 X Street, Sacramento, CA 95818</h2>
 			</div>
 		</header>
@@ -63,37 +63,123 @@
 		
 		<section class="images">
 			<h3>Larry Z</h3>
-				<img src="Images/IMG_0564.jpeg" width="125" alt="man with baby">
+				<img src="Images/IMG_0564.jpeg" width="85" alt="man with baby">
 			<h3>Aaron Z</h3>
-				<img src="Images/ZimmermanWedding (123 of 491).jpg" width="125" alt="man with long hair and beard">
+				<img src="Images/ZimmermanWedding (123 of 491).jpg" width="85" alt="man with long hair and beard">
 			<h3>Little Z</h3>
-				<img src="Images/IMG_5620.jpeg" width="125" alt="little girl in chair">
+				<img src="Images/IMG_5620.jpeg" width="85" alt="little girl in chair">
+	  	</section>
 	  </section>
-		
-		<section id="imageSlides">
-	  		<p> SLIDE SHOW TO GO HERE </p>
-	  </section>
-		
-	</section>
 	  
-	 <section class="map">
-		<h2>Map</h2>
-      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.5895474895983!2d-121.50876598465935!3d38.566269579623075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ad13c7441db5b%3A0xa341a0aab3222835!2sLarry&#39;z%20Auto%20Works!5e0!3m2!1sen!2sus!4v1589066782730!5m2!1sen!2sus" width="550" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-		<p>500 X Street, Sacramento, CA 95818</p>
-	</section> 
-		
+			<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+      <img src="Images/babyK.jpeg" alt="baby in shop" width="25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+      <img src="Images/LZQuad.JPG" alt="man on quad" width="25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+      <img src="Images/Santa.jpg" alt="men with santa" width="25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+      <img src="Images/KwithDaddy.jpeg" alt="baby with man" width="25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+      <img src="Images/Kbuggy.jpeg" alt="baby in dune buggy" width="25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+      <img src="Images/KsignShop.jpeg" alt="baby in front of shop" width="25%">
+  </div>
 	
-  
-	</main>
+	<div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+      <img src="Images/LZRace.jpg" alt="race car" width="25%">
+  </div>
+	
+	<div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+      <img src="Images/Family.jpg" alt="family group" width="25%">
+  </div>
+	
+	<div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+      <img src="Images/KShopEating.jpeg" alt="baby in highchair" width="25%">
+  </div>
+	
+	<div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+      <img src="Images/Sticker250.png" alt="sticker of drawn man" width="25%">
+  </div>
+	
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="myThumbnail cursor" src="Images/babyK.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Little Z visiting daddy">
+    </div>
+    <div class="column">
+      <img class="myThumbnail cursor" src="Images/LZQuad.JPG" style="width:100%" onclick="currentSlide(2)" alt="Larry on his Quad">
+    </div>
+    <div class="column">
+      <img class="myThumbnail cursor" src="Images/Santa.jpg" style="width:100%" onclick="currentSlide(3)" alt="Aaron and Larry with Santa">
+    </div>
+    <div class="column">
+      <img class="myThumbnail cursor" src="Images/KwithDaddy.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Aaron showing Little Z the ropes">
+    </div>
+    <div class="column">
+      <img class="myThumbnail cursor" src="Images/Kbuggy.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Little Z loves daddy's buggy">
+    </div>
+    <div class="column">
+      <img class="myThumbnail cursor" src="Images/KsignShop.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Little Z promoting">
+	</div>
+	<div class="column">
+      <img class="myThumbnail cursor" src="Images/LZRace.jpg" style="width:100%" onclick="currentSlide(7)" alt="Larry'Z Race Car">
+	</div>	
+	<div class="column">
+      <img class="myThumbnail cursor" src="Images/Family.jpg" style="width:100%" onclick="currentSlide(8)" alt="The Z family"></div>	
+	<div class="column">
+      <img class="myThumbnail cursor" src="Images/KShopEating.jpeg" style="width:100%" onclick="currentSlide(9)" alt="Little Z snacks at the shop">
+	</div>
+	<div class="column">
+      <img class="myThumbnail cursor" src="Images/Sticker250.png" style="width:100%" onclick="currentSlide(10)" alt="RIP Larry Z ~ Missed and Loved">	
+    </div>
+	  
+	</div>
+</div> 
+
+</main>
 	
   <footer>
 	<div id="footer">
 		<div class="footerinfo">
 			<h2>Hours of Operation:</h2>
-			<p>*By Appointment Only</p>
+			<p><strong>*By Appointment Only*</strong></p>
 			<p>Monday-Thursday 7:30-4pm</p>
 		</div>	
-		<div class="footerinfo">
+		<div class="footername">
 			<h2>Larry'Z Autoworks</h2>
 			<p>Where honesty & quality go hand in hand</p>
 		</div>	
@@ -160,7 +246,41 @@
 
 	</script>
 	
+
+	/*********Script for slideshow********/
 	
+	<script>	var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+	
+}
+	</script>
 	
 	
 </body>

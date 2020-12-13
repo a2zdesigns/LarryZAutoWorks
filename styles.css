@@ -26,11 +26,37 @@ body {
 	background-image:url("Images/groundTiles1000.png")
 }
 
+header{ 
+	margin: auto;
+	padding-left: 30px;
+}
+
+header h2 {
+	text-align: right;
+	font-size: 1.7em;
+	padding-right: 20px;
+}
+
 header h1 {
 	font-family: 'Alex Brush','Arizonia','Allura', cursive;
-	font-size: 65px;
+	font-size: 4.5em;
 
 }
+
+header h3 {
+	font-size: 1.7em;
+}
+
+header img {
+	position: right;
+}
+
+#imgHeader img {
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+}
+
 
 /******************** Navigation Styles *******/
 
@@ -40,7 +66,6 @@ header h1 {
 
 #mobilenav {
 	background: #0F75BC;
-	margin-bottom: 20px;
 	padding-right: 20px;
 }
 
@@ -84,8 +109,9 @@ header h1 {
 
 /*********************** Home section styles *******/
 
-#homeinfo { padding: 0;
-	background:#44A1E2
+#homeinfo { padding: 5px;
+	background:#44A1E2;
+	padding-bottom: 35px;
 	}
 
 #homeinfo article { padding: 15px; }
@@ -97,7 +123,7 @@ header h1 {
 #homeinfo article:first-of-type { 
 	font-size:1.1em;
 	color: aliceblue;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
  }
 
 #homeinfo article:last-of-type {
@@ -110,21 +136,38 @@ header h1 {
 #homeinfo article ul li{
 	list-style-type:disc;
 }
+
+.cc {
+	padding-bottom: 10px;
+}
 /*********************** Services styles*******/
 
 #servicesParent {
 	background-color: #44A1E2;
 	padding: 20px;
 }
+#servicesParent h1{
+	padding: 10px;
+	font-size: 2em;
+}
+
+#servicesParent p {
+	padding-bottom: 15px;
+}
 
 #servicesParent .servicesIconsParent {
 	background-color: gainsboro;
 	display: block;
-	margin-left: auto;
 	padding: 20px;
-	margin-bottom: 15px;
 }
 
+.servicesIcons {
+	text-align: center;
+}
+
+.servicesIcons img {
+	padding-top: 15px;
+}
 
 /************************FAQ styles******/
 
@@ -141,36 +184,170 @@ main {
 
 #personalReview {
 	display: flex;
+	justify-content: space-between;
+}
+
+#personalReview article {
+	padding:25px;
 }
 
 h2 {
 	padding: 30px 0px 20px 0;
 }
 
-/******************** Photos Styles ******/
+#socialLinks img {
+	margin-right: 30px;
+}
+
 .map p {
 	font-size: 1.5em;
 	padding-top: 10px;
+
+/******************** Photos Styles ******/
 	
 }
+.images img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border: #0F75BC solid 5px;
+}
+
+.images h3 {
+	text-align: center;
+}
+
+.PhotosIntro p {
+	padding: 20px 0px;
+}
+/****SlideShow****/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+	padding: 25px 0px;
+}
+
+.mySlides img {
+	border: #0F75BC solid 5px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block; 
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #0F75BC;
+  padding: 10px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 10%;
+}
+
+.row {
+	padding-top: 15px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.myThumbnail {
+  opacity: 0.6;
+}
+
+.active,
+.myThumbnail:hover {
+  opacity: 1;
+}
+
 /******************* Footer Styles *******/
 
 #footer {
-	display:flex;
-	justify-content: space-between;
-	padding: 10px 20px 10px;
 	background: #0f75bc;
 	color: aliceblue;
+	margin-top: 50px;
 }
 
-.name h2 {
-	font-family: 'Alex Brush','Arizonia','Allura', cursive;
+.footerinfo {
+	padding: 0px 25px 25px;
+	
+}
+
+.footerinfo p:first-of-type {
+	padding-bottom: 15px;
+}
+
+.footerinfo p:last-of-type {
+	font-size: 1.2em;
+}
+
+.footername {
+	display: none;
 }
 
 
 
-
-/***** Responsive *******/
+/************************* Responsive *******/
 
 @media only screen and (min-width: 600px){ 
 
@@ -182,8 +359,9 @@ h2 {
 	#header img { 
 		display: right;}
 	
+	
 	#mobilenav {
-		display:none;
+		display: none;
 	}
 	
 	#mainnav {
@@ -212,11 +390,50 @@ h2 {
 		border-right: 1px solid #44A1E2;
 	}
 	
+	#homeinfo img {
+	position: absolute;
+}
+
+	#homeinfo article:first-of-type { 
+	padding-left: 260px;
+ }	
+	
 	#servicesParent .servicesIconsParent {
 		display: flex;
 		justify-content: space-between;
-		
 	}
+	
+	.map {
+		width:"500";
+	
+}
+	.images {
+		display: flex;
+
+	}
+	
+	.column {
+		width:15%;
+	}
+	
+	#footer {
+	display:flex;
+	justify-content: space-between;
+	padding: 10px 20px 25px;
+	background: #0f75bc;
+	color: aliceblue;
+}
+	
+	.footername {
+	display: block;
+	}
+	
+	.footername h2 {
+	font-size: 2em;
+	font-family: 'Alex Brush','Arizonia','Allura', cursive;	
+}
+	
+	
 }
 
 @media only screen and (min-width: 960px){ 
