@@ -183,8 +183,8 @@ main {
 /*********************Reviews Styles *******/
 
 #personalReview {
-	display: flex;
-	justify-content: space-between;
+	display: block;
+	
 }
 
 #personalReview article {
@@ -333,6 +333,14 @@ h2 {
 	
 }
 
+.footerinfo img {
+	padding-right: 10px;
+}
+
+.footerinfo a {
+	font: small-caps;
+}
+
 .footerinfo p:first-of-type {
 	padding-bottom: 15px;
 }
@@ -402,6 +410,11 @@ h2 {
 		display: flex;
 		justify-content: space-between;
 	}
+	
+	#personalReview {
+	display: flex;
+	justify-content: space-between;
+}
 	
 	.map {
 		width:"500";
