@@ -157,18 +157,15 @@ header img {
 }
 
 #servicesParent .servicesIconsParent {
-	background-color: gainsboro;
-	display:block;
-	padding: 20px;
+	display:flex;
+	align-content: space-between;
+	padding: 10px;
 }
 
 .servicesIcons {
-	text-align: left;
-}
-
-.servicesIcons img {
 	padding-top: 15px;
 }
+
 
 /************************FAQ styles******/
 
@@ -278,7 +275,7 @@ h2 {
   font-size: 20px;
   padding: 15px;
   width: 70%;
-  text-align: center;
+  text-align: right;
 }
 
 /* Number text (1/3 etc) */
