@@ -162,7 +162,8 @@ header img {
 	padding: 10px;
 }
 
-.servicesIcons {
+.servicesIcons img {
+	display: block;
 	padding-top: 15px;
 }
 
